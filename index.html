@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Login Page</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(discord.jpeg);
+        }
+
+      
+        .login-container {
+            max-width: 970px;
+            margin: 270px auto ;
+            padding: 20px;
+            background-color: #424549;
+            box-shadow: 100px;
+            
+        }
+
+        .required:after {
+            content: "*";
+            color: red;
+        }
+
+        #login-form {
+            display: inline-block;
+
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            color: white;
+            font-family: monospace;
+
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: monospace;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid;
+
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #667bc4;
+            color: white;
+            border: none;
+            font-family: monospace;
+           
+        }
+
+        button:hover {
+            background-color: #6074b8;
+        }
+
+       #texts {
+            text-align: center;
+            color: white ;
+            font-family: monospace;
+            margin: 10px;
+            margin-right: 500px;
+        }
+        #PIC {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 12px 12px 12px 12px;
+
+        }
+
+        .qr-code {
+            margin-left: 445px ;
+            margin-top: -360px;
+            color: white;
+            font-family: monospace;
+           
+        }
+
+        #text2 {
+            color: white;
+            font-family: monospace;
+        }
+
+       a:link {
+            color: red ;
+       }
+
+    </style>
+
+    </head>
+    <body>  
+
+        <div class="login-container">
+
+
+        <div id="texts">
+
+        <h1>Welcome back!</h1>
+        <p>We're excited to see you again!</p>
+
+        </div>
+
+        <!-- FORM AREA -->
+            <div class="container me-auto" style="display: inline-block;">
+            <form id="login-form"> 
+
+
+            <div class="form-group">
+
+                <label class="required" for="username">Email or Phone Number</label>
+                <input type="text" id="username" name="username" required> 
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label class="required"for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <a href="">Forgot your Password?</a>
+
+            </div>
+
+                <button type="submit">Log in</button> 
+
+                <div id="text2">
+                <p>Need an account? <a href=""> Register</a></p>
+                </div> 
+
+
+
+            </form>
+
+    </div>
+
+        <!-- QR CODE -->
+
+           <div class="qr-code text-center">
+            <img src="qrcode.png" alt="Image Not Loading" id="PIC">
+            <h5 class="mb-4">Log in with QR Code</h5>
+            <p>Scan this with Discord Mobile app to log in instantly.</p> 
+        </div>
+            
+
+
+       
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
